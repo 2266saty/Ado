@@ -1,0 +1,25 @@
+﻿@model IEnumerable<FootballLeague2.FootballLeague>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<body align="center" style="background-color:aquamarine;">
+    <div>
+        <h1>Add Match Result</h1>
+    </div>
+    @foreach (var item in Model)
+    {
+        <h2>MatchId:@item.MatchId</h2>
+        <h2>TeamName1 : @item.TeamName1</h2>
+        <h2>TeamName2 : @item.TeamName2</h2>
+        <h2>Status : @item.Status</h2>
+        <h2>Winning Team : @item.WinningTeam</h2>
+        <h2>Points : @item.Points</h2>
+
+
+
+    }
+</body>
